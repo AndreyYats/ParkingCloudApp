@@ -4,13 +4,14 @@ This application for download data of parking sensors from .CSV file and display
 
 ## Features
 
-Custom Objects with relationships: Base_Station__c, Sensor__c;
-Apex, LWC, SOQL queries;
-Flows Automatization;
-Pagination with buttons: First page, Last Page, Previous page, Next page, Table size;
-Sortable columns in the LWC table;
-Custom Metadata Types;
-Unit-test coverage 97%.
+Custom Objects with relationships: 
+- Base_Station__c, Sensor__c;
+- Apex, LWC, SOQL queries;
+- Flows Automatization;
+- Pagination with buttons: First page, Last Page, Previous page, Next page, Table size;
+- Sortable columns in the LWC table;
+- Custom Metadata Types;
+- Unit-test coverage 97%.
 
 ## Configure Your Salesforce DX Project
 
