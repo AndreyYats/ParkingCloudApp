@@ -1,0 +1,36 @@
+<template>
+    <lightning-card icon-name="custom:custom31">
+        <div class="slds-align_absolute-center" style="margin: 0 0 20px 0">
+            <lightning-file-upload accept=".csv"
+                                label="Download CSV file"
+                                record-id = {recordId}
+                                onuploadfinished={downloadCSVHandler}>
+            </lightning-file-upload>
+        </div>
+        <template if:true={error}>
+            <p>{error}</p>
+        </template>
+        <template if:true={sensors}>
+            <lightning-datatable key-field="id" 
+                                data={sensors} 
+                                columns={columns}
+                                hide-checkbox-column="true"
+                                sorted-by={sortBy}
+                                sorted-direction={sortDirection}
+                                onsort={handleSort}
+                                onrowaction={handleRowAction}>                 
+            </lightning-datatable>
+            <div class="slds-text-align_center">
+                <p style="margin: 20px 0px -23px 0px;">Page <b>{page}</b> of <b>{amountPages}</b> </p>
+            </div>
+            <c-pagination ongetdefaultsize={handleDefaultSize} 
+                        onprevious={handlePrevious} 
+                        onnext={handleNext} 
+                        onselected={handleSelectChange} 
+                        onfirst={handleFirst} 
+                        onlast={handleLast}>
+           </c-pagination>
+        </template>  
+     </lightning-card>
+</template> 
+
