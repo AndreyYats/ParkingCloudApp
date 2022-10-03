@@ -1,10 +1,16 @@
-# Salesforce DX Project: Next Steps
+# Salesforce project: ParkingCloudApp
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This application for download data of parking sensors from .CSV file and display it in a table, delete sensors from table, change pages using pagination buttons, change table size and sort table columns.
 
-## How Do You Plan to Deploy Your Changes?
+## Features
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Custom Objects with relationships: Base_Station__c, Sensor__c;
+Apex, LWC, SOQL queries;
+Flows Automatization;
+Pagination with buttons: First page, Last Page, Previous page, Next page, Table size;
+Sortable columns in the LWC table;
+Custom Metadata Types;
+Unit-test coverage 97%.
 
 ## Configure Your Salesforce DX Project
 
